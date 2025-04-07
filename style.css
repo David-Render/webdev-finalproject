@@ -236,7 +236,6 @@ footer {
     object-fit: cover;
   }
   
-  /* Ensure floats don’t overflow outside content box */
   .content-box::after {
     content: "";
     display: block;
