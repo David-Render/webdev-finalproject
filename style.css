@@ -242,3 +242,63 @@ footer {
     clear: both;
   }
   
+  .build-section {
+    background: #fff;
+    padding: 30px 20px;
+    margin: 40px auto;
+    border-radius: 10px;
+    max-width: 1000px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .build-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .build-section h2 a {
+    text-decoration: none;
+    color: #2c3e50;
+  }
+  
+  .build-section h2 a:hover {
+    text-decoration: underline;
+  }
+  
+  .build-section p {
+    font-size: 1rem;
+    margin-bottom: 16px;
+    color: #444;
+  }
+  
+  .build-section img:hover {
+    transform: scale(1.02);
+  }
+
+  .build-section img {
+    float: right;
+    width: 100px;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+    margin-left: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 0;             
+    box-shadow: none;            
+    vertical-align: top;
+  }  
+  
+  .build-section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }    
+
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 1em;
+  }
+  

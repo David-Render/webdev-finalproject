@@ -1,0 +1,203 @@
+
+.global-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #222;
+    padding: 12px 24px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  .global-nav .site-logo {
+    height: 80px;
+    width: auto;
+  }
+  
+  .global-nav .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .global-nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 8px 12px;
+  }
+  
+  
+  .global-nav .nav-links a:hover {
+    background: #444;
+    border-radius: 4px;
+  }
+  
+  .inpage-nav {
+    position: sticky;
+    top: 100px;
+    background: #e0f7fa;
+    border-bottom: 3px dashed #00b4d8;
+    padding: 12px 0;
+    z-index: 999;
+    text-align: center;
+  }
+  
+  .inpage-nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .inpage-nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #00778b;
+    padding: 6px 14px;
+    border-radius: 6px;
+    background: #caf0f8;
+    transition: background 0.2s ease-in-out;
+  }
+  
+  .inpage-nav a:hover {
+    background: #90e0ef;
+  }
+  
+  body {
+    font-family: 'Comic Sans MS', 'Segoe UI', cursive;
+    background: linear-gradient(135deg, #e0f7fa, #fff7e6);
+    color: #222;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .content-wrapper {
+    padding: 180px 20px 60px;
+  }
+  
+  
+  .content-box {
+    background: #ffffffcc;
+    margin: 50px auto;
+    padding: 30px 24px;
+    max-width: 900px;
+    border-left: 12px dashed #ffb703;
+    border-radius: 30px 10px 30px 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transform: rotate(0.3deg);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .content-box:hover {
+    transform: rotate(1deg) scale(1.015);
+    background-color: #fffce8;
+  }
+  
+  .content-box h1,
+  .content-box h2 {
+    margin-top: 0;
+    font-weight: 800;
+    color: #023047;
+    padding: 8px 12px;
+    background: linear-gradient(to right, #00b4d8, #90e0ef);
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0 #0077b6;
+    transform: rotate(-1deg);
+  } 
+  
+  .content-box p,
+  .content-box li {
+    font-size: 18px;
+  } 
+  
+  .icon-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+  
+  .icon-list li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 10px;
+  }
+   
+  .icon-list.surf li::before {
+    content: "🌊";
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+   
+  .icon-list.mountain li::before {
+    content: "🏔️";
+    position: absolute;
+    left: 0;
+    top: 0;
+  } 
+  .icon-list.ice li::before {
+    content: "🧊";
+    position: absolute;
+    left: 0;
+    top: 0;
+  } 
+  .icon-list.skate li::before {
+    content: "🛹";
+    position: absolute;
+    left: 0;
+    top: 0;
+  } 
+  .icon-list.waterski li::before {
+    content: "💦";
+    position: absolute;
+    left: 0;
+    top: 0;
+  } 
+  .icon-list.rock li::before {
+    content: "🧗";
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .content-box img {
+    float: right;
+    width: 160px;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+    margin-left: 24px;
+    margin-bottom: 12px;
+    border-radius: 0;
+    box-shadow: none;
+    vertical-align: top;
+  }
+  
+  .content-box::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  
+  footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+    font-size: 0.95rem;
+  }
+  
