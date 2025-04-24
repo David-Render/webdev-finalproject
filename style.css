@@ -302,3 +302,129 @@ footer {
     margin-bottom: 1em;
   }
   
+  .map-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+  }
+  
+  /* Wrapper that we scale */
+  .map-zoom-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Responsive image */
+  .map-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+  
+  /* Marker Base */
+  .map-marker {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  
+  /* Popups */
+  .marker-popup {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 240px;
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    font-size: 14px;
+    text-align: center;
+    display: none;
+    z-index: 999;
+  }
+  
+  .marker-popup.visible {
+    display: block;
+  }
+  
+  /* Zoom Buttons Bottom Right */
+  .map-controls {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+  }
+  
+  .map-controls button {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+  }
+  
+  .map-controls button:hover {
+    background-color: #444;
+  }
+
+  .map-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    cursor: grab;
+  }
+  
+  .map-container:active {
+    cursor: grabbing;
+  }
+  
+  /* Snowboard-specific styling */
+  .map-marker.snowboard-place i {
+    color: teal;
+    font-size: 28px;
+  }
+
+
+  .map-marker.alps {
+    top: 39%;
+    left: 49%;
+  }
+  .map-marker.hunter {
+    top: 42.5%;
+    left: 33%;
+  }
+  .map-marker.camelback {
+    top: 43.5%;
+    left: 32.7%;
+  }
+  .map-marker.andorra {
+    top: 40%;
+    left: 47.5%;
+  }
+  .map-marker.breck {
+    top: 43%;
+    left: 26.6%;
+  }
+  .map-marker.granite {
+    top: 39.5%;
+    left: 31%;
+  }
+  
