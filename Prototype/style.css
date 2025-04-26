@@ -56,7 +56,6 @@ img { max-width: 100%; height: auto; }
   border-radius: 4px;
 }
 
-/* In-page Nav (Updated) */
 .inpage-nav {
   position: sticky;
   top: 100px;
@@ -91,7 +90,6 @@ img { max-width: 100%; height: auto; }
   background: #90e0ef;
 }
 
-/* Lead Section */
 .lead {
   background: #fff;
   padding: 60px 20px;
@@ -102,19 +100,16 @@ img { max-width: 100%; height: auto; }
   overflow: hidden;
 }
 
-/* Text container */
 .lead-text { overflow: hidden; }
 
-/* General heading alignment */
 .lead-text h1,
 .lead-text h2 {
   text-align: center;
 }
 
-/* Fancy Title Box (Adventure Awaits) */
 .fancy-title {
   display: inline-block;
-  background: linear-gradient(to right, #00b4d8, #90e0ef); /* Blue gradient box */
+  background: linear-gradient(to right, #00b4d8, #90e0ef);
   padding: 12px 24px;
   border-radius: 15px 5px 15px 5px;
   box-shadow: 3px 3px 0px #0077b6;
@@ -122,7 +117,6 @@ img { max-width: 100%; height: auto; }
   margin-bottom: 20px;
 }
 
-/* Adventure Awaits text */
 .fancy-title h1 {
   font-size: 2.5rem;
   background: url('images/adventure.gif') center center / cover no-repeat;
@@ -134,7 +128,6 @@ img { max-width: 100%; height: auto; }
   margin: 0;
 }
 
-/* From icy peaks... (handwriting style) */
 .pencil-text {
   font-family: 'Architects Daughter', 'Caveat', cursive;
   font-size: 1.8rem;
@@ -142,7 +135,6 @@ img { max-width: 100%; height: auto; }
   margin-bottom: 20px;
 }
 
-/* Image on the side */
 .lead-image {
   float: right;
   width: 250px;
@@ -154,13 +146,11 @@ img { max-width: 100%; height: auto; }
   object-fit: cover;
 }
 
-/* Intro paragraph */
 .intro {
   font-size: 1rem;
   margin-top: 15px;
 }
 
-/* === Showcase Section === */
 .showcase-wrapper {
   background: #fff;
   padding: 30px;
@@ -185,7 +175,6 @@ img { max-width: 100%; height: auto; }
   margin: 40px auto 0;
 }
 
-/* Default card styling */
 .showcase-item {
   background: #fafafa;
   border-radius: 10px;
@@ -197,12 +186,10 @@ img { max-width: 100%; height: auto; }
   transition: transform 0.3s;
 }
 
-/* Homepage orange override */
 .home-page .showcase-item {
   background: #ffdac1;
 }
 
-/* Whole card clickable */
 .home-page .showcase-item a {
   text-decoration: none;
   color: inherit;
@@ -222,7 +209,6 @@ img { max-width: 100%; height: auto; }
   color: #222;
 }
 
-/* Reset h3 INSIDE clickable card */
 .home-page .showcase-item a h3,
 .home-page .showcase-item a h3:visited,
 .home-page .showcase-item a h3:hover,
@@ -233,7 +219,6 @@ img { max-width: 100%; height: auto; }
   margin-bottom: 10px;
 }
 
-/* Reset paragraph INSIDE clickable card */
 .home-page .showcase-item a p,
 .home-page .showcase-item a p:visited,
 .home-page .showcase-item a p:hover,
@@ -244,7 +229,6 @@ img { max-width: 100%; height: auto; }
   margin-top: 10px;
 }
 
-/* Image styling */
 .showcase-item img {
   height: 250px;
   width: auto;
@@ -252,12 +236,10 @@ img { max-width: 100%; height: auto; }
   margin-bottom: 10px;
 }
 
-/* Hover zoom */
 .showcase-item:hover {
   transform: scale(1.03);
 }
 
-/* Responsive flex layout */
 @media (min-width: 900px) {
   .showcase {
     flex-wrap: nowrap;
@@ -269,7 +251,6 @@ img { max-width: 100%; height: auto; }
   }
 }
 
-/* Footer */
 footer {
   background: #222;
   color: #fff;
@@ -278,7 +259,6 @@ footer {
   margin-top: auto;
 }
 
-/* Scroll */
 .nav-hidden {
     transform: translateY(-300%);
   }  
@@ -289,9 +269,7 @@ footer {
     will-change: transform;
   }
 
-  /* === Reviews Page Sections === */
 
-/* === Content Box (Updated) === */
 .content-box {
   background: #ffffffcc;
   margin: 50px auto;
@@ -413,7 +391,6 @@ footer {
     overflow: hidden;
   }
   
-  /* Wrapper that we scale */
   .map-zoom-wrapper {
     position: absolute;
     top: 0;
@@ -424,7 +401,6 @@ footer {
     transition: transform 0.3s ease-in-out;
   }
   
-  /* Responsive image */
   .map-image {
     width: 100%;
     height: 100%;
@@ -432,7 +408,6 @@ footer {
     display: block;
   }
   
-  /* Marker Base */
   .map-marker {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -440,8 +415,6 @@ footer {
     z-index: 10;
   }
   
-  
-  /* Popups */
   .marker-popup {
     position: absolute;
     top: 40px;
@@ -462,7 +435,6 @@ footer {
     display: block;
   }
   
-  /* Zoom Buttons Bottom Right */
   .map-controls {
     position: absolute;
     bottom: 20px;
@@ -500,7 +472,6 @@ footer {
     cursor: grabbing;
   }
   
-  /* Snowboard-specific styling */
   .map-marker.snowboard-place i {
     color: teal;
     font-size: 28px;
