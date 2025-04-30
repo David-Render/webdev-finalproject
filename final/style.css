@@ -488,7 +488,7 @@ footer {
   }
   .map-marker.camelback {
     top: 43.5%;
-    left: 32.7%;
+    left: 31.7%;
   }
   .map-marker.andorra {
     top: 40%;
@@ -502,6 +502,41 @@ footer {
     top: 39.5%;
     left: 31%;
   }
+
+  .map-marker.gardenstate {
+    top: 44%;
+    left: 33.3%;
+  }
+  .map-marker.rutgerswall {
+    top: 43.5%;
+    left: 32.8%;
+  }
+
+  .map-marker.asbury {
+    top: 44.2%;
+    left: 34.3%;
+  }
+  .map-marker.huntington {
+    top: 49%;
+    left: 24.6%;
+  }
+
+  .map-icon {
+    width: 28px;
+    height: 28px;
+    display: block;
+    pointer-events: none;
+    object-fit: contain;
+  }
+  .surfboard-icon {
+    width: 600px;
+    height: 40px;
+    display: block;
+    transform: scaleX(1.3) scaleY(1.2);
+    transform-origin: center;
+  }
+  
+
   
   .profile-pic {
     float: right;

@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const zoomIn = document.getElementById("zoom-in");
 	const zoomOut = document.getElementById("zoom-out");
 	const mapContainer = document.querySelector(".map-container");
+	const markers = document.querySelectorAll(".map-marker");
 
 	let currentZoom = 1.0;
 	let translateX = 0;
@@ -11,12 +12,14 @@ document.addEventListener("DOMContentLoaded", () => {
 	let startX = 0;
 	let startY = 0;
 
-	// Update zoom + drag transform
 	function updateTransform() {
 		zoomWrapper.style.transform = `translate(${translateX}px, ${translateY}px) scale(${currentZoom})`;
+
+		markers.forEach(marker => {
+			marker.style.transform = `translate(-50%, -50%) scale(${1 / currentZoom})`;
+		});
 	}
 
-	// Zoom in/out buttons
 	zoomIn.addEventListener("click", () => {
 		currentZoom = Math.min(currentZoom + 0.25, 4);
 		updateTransform();
@@ -27,20 +30,17 @@ document.addEventListener("DOMContentLoaded", () => {
 		updateTransform();
 	});
 
-	// Prevent image ghost-drag
 	const mapImage = document.querySelector(".map-image");
 	mapImage.ondragstart = () => false;
 
-	// Begin drag
 	mapContainer.addEventListener("mousedown", (e) => {
 		isDragging = true;
 		startX = e.clientX - translateX;
 		startY = e.clientY - translateY;
 		mapContainer.classList.add("dragging");
-		e.preventDefault(); // prevent default image drag
+		e.preventDefault(); 
 	});
 
-	// End drag
 	window.addEventListener("mouseup", () => {
 		isDragging = false;
 		mapContainer.classList.remove("dragging");
@@ -51,7 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		mapContainer.classList.remove("dragging");
 	});
 
-	// Update drag position on mouse move (instant)
 	window.addEventListener("mousemove", (e) => {
 		if (!isDragging) return;
 		translateX = e.clientX - startX;
@@ -59,8 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		updateTransform();
 	});
 
-	// Marker click popup toggle
-	const markers = document.querySelectorAll(".map-marker");
 	markers.forEach(marker => {
 		marker.addEventListener("click", (e) => {
 			e.stopPropagation();
@@ -71,8 +68,9 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	});
 
-	// Close popups on outside click
 	document.addEventListener("click", () => {
 		document.querySelectorAll(".marker-popup.visible").forEach(p => p.classList.remove("visible"));
 	});
+
+	updateTransform()
 });
