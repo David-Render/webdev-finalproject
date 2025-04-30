@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Locations</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+	<div id="page-wrapper">
+		<header>
+			<nav class="global-nav">
+				<a href="homepage.html">
+					<img src="images/logo.svg" alt="Extreme Sport Travel Logo" class="site-logo" />
+				</a>
+				<ul class="nav-links">
+					<li><a href="homepage.html">Home</a></li>
+					<li><a href="gallery.html">Builds</a></li>
+					<li><a href="locations.html">Locations</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="reviews.html">Reviews</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<nav class="inpage-nav">
+			<ul>
+				<li><a href="#map">Map</a></li>
+			</ul>
+		</nav>
+
+		<main class="content-wrapper" id="map">
+            <div class="map-container">
+                <div class="map-zoom-wrapper" id="map-zoom-wrapper">
+                    <img src="images/worldmap.png" alt="World Map" class="map-image" />
+        
+                    <div class="map-marker snowboard-place alps" data-popup-id="popup-alps">
+                        <i class="fas fa-snowboarding fa-2x" style="color: teal;"></i>
+                        <div class="marker-popup" id="popup-alps">
+                            <h2>Snowboarding in the Alps</h2>
+                            <p>The world's most famous mountain chain with powder runs and backcountry.</p>
+                        </div>
+                    </div>
+                    <div class="map-marker snowboard-place hunter" data-popup-id="popup-hunter">
+                        <i class="fas fa-snowboarding fa-2x" style="color: teal;"></i>
+                        <div class="marker-popup" id="popup-hunter">
+                            <h2>Hunter Mountain</h2>
+                            <p>New York's famous snowboarding resort and a top beginner mountain in the New England area.</p>
+                        </div>
+                    </div>
+                    <div class="map-marker snowboard-place camelback" data-popup-id="popup-camelback">
+                        <i class="fas fa-snowboarding fa-2x" style="color: teal;"></i>
+                        <div class="marker-popup" id="popup-camelback">
+                            <h2>Camelback Mountain</h2>
+                            <p>East coast favorite in the Poconos with lots of beginner-to-intermediate friendly slopes.</p>
+                        </div>
+                    </div>
+                    <div class="map-marker snowboard-place andorra" data-popup-id="popup-andorra">
+                        <i class="fas fa-snowboarding fa-2x" style="color: teal;"></i>
+                        <div class="marker-popup" id="popup-andorra">
+                            <h2>Grandvalira, Andorra</h2>
+                            <p>The largest ski area in the Pyrenees, known for scenic rides and high-quality snowboarding terrain at a fair price.</p>
+                        </div>
+                    </div>
+                    <div class="map-marker snowboard-place breck" data-popup-id="popup-breck">
+                        <i class="fas fa-snowboarding fa-2x" style="color: teal;"></i>
+                        <div class="marker-popup" id="popup-breck">
+                            <h2>Breckenridge, CO</h2>
+                            <p>World-renowned resort in the Rockies with the best powder in the U.S. of A.</p>
+                        </div>
+                    </div>
+                    <div class="map-marker snowboard-place granite" data-popup-id="popup-granite">
+                        <i class="fas fa-snowboarding fa-2x" style="color: teal;"></i>
+                        <div class="marker-popup" id="popup-granite">
+                            <h2>Granite Peak, WI</h2>
+                            <p>Wisconsin’s most famous snowboard destination.</p>
+                        </div>
+                    </div>
+
+                </div>
+        
+                <div class="map-controls">
+                    <button id="zoom-in">+</button>
+                    <button id="zoom-out">−</button>
+                </div>
+            </div>
+        </main>              
+
+		<footer>
+			<p>&copy; 2025 by Extreme Sport Travel. All rights reserved.</p>
+		</footer>
+	</div>
+
+	<script src="scripts/hidescroll.js"></script>
+	<script src="scripts/map.js"></script>
+</body>
+</html>
