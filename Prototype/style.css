@@ -574,7 +574,6 @@ footer {
     box-shadow: none;
   }
   
-  /* For rotated images, maintain boundaries */
   .gallery-grid-3 img.rotate {
     transform: rotate(90deg);
   }

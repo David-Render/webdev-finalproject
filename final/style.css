@@ -383,6 +383,33 @@ footer {
     line-height: 1.6;
     margin-bottom: 1em;
   }
+
+  .gallery-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  .gallery-grid-3 img {
+    width: 100%;
+    max-height: 300px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    background: transparent;
+    display: block;
+    margin: 0 auto;
+    box-shadow: none;
+  }
+  .gallery-grid-3 img.rotate {
+    transform: rotate(90deg);
+  }
+  .gallery-grid-3 img.rotate2 {
+    transform: rotate(270deg);
+  }  
   
   .map-container {
     position: relative;
@@ -538,7 +565,6 @@ footer {
     transform-origin: center;
   }  
   
-
   
   .profile-pic {
     float: right;
