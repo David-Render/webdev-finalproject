@@ -97,28 +97,42 @@ body {
 }
 
 .content-box:hover {
-  transform: rotate(1deg) scale(1.015);
-  background-color: #fffce8;
+  transform: scale(1.15);
+  background-color: #e8fff9;
 }
 
 .content-box h1,
 .content-box h2 {
-  margin-top: 0;
+  font-size: 2.5rem;
   font-weight: 800;
   color: #023047;
-  padding: 8px 12px;
+  padding: 12px 24px;
   background: linear-gradient(to right, #00b4d8, #90e0ef);
-  display: inline-block;
+  display: block;
+  width: fit-content;
   border-radius: 10px;
   box-shadow: 3px 3px 0 #0077b6;
   transform: rotate(-1deg);
+  margin: 0 auto 24px auto;
+  text-align: center;
 }
+
 
 .content-box p,
 .content-box li {
   font-size: 18px;
 }
 
+.content-box {
+	scroll-margin-top: 160px;
+}
+
+.content-box::before {
+	content: "";
+	display: block;
+	height: 160px;
+	margin-top: -160px;
+}
 .icon-list {
   list-style: none;
   padding-left: 0;
@@ -315,4 +329,14 @@ footer {
   position: absolute;
   left: 0;
   top: 0;
+}
+
+.nav-hidden {
+  transform: translateY(-300%);
+}  
+
+.global-nav,
+.inpage-nav {
+  transition: transform 0.2s ease-in-out;
+  will-change: transform;
 }
