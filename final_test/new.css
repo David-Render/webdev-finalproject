@@ -1,0 +1,224 @@
+/* ---------- Base Reset & Layout ---------- */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background: linear-gradient(to bottom right, #e2efff, #f0e8ff);
+	color: #333;
+	line-height: 1.6;
+}
+
+#page-wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.content-wrapper {
+	padding: 180px 20px 40px;
+}
+
+/* ---------- Navigation (Top Bar) ---------- */
+.global-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #222;
+	padding: 12px 24px;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.site-logo {
+	height: 80px;
+}
+
+.nav-links {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+}
+
+.nav-links a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+	font-size: 1.2rem;
+}
+
+.nav-links a:hover,
+.nav-links a.active,
+.nav-links a[aria-current="page"] {
+	background: #00b4d8;
+	border-radius: 4px;
+}
+
+/* ---------- In-page Navigation ---------- */
+.inpage-nav {
+	position: sticky;
+	top: 100px;
+	background: #e0f7fa;
+	border-bottom: 3px dashed #00b4d8;
+	padding: 12px 0;
+	z-index: 999;
+	text-align: center;
+}
+
+.inpage-nav ul {
+	display: flex;
+	justify-content: center;
+	gap: 18px;
+	list-style: none;
+}
+
+.inpage-nav a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #00778b;
+	padding: 6px 14px;
+	border-radius: 6px;
+	background: #caf0f8;
+}
+
+.inpage-nav a:hover {
+	background: #90e0ef;
+}
+
+/* ---------- Content Box Layout ---------- */
+.content-box {
+	background: #fff;
+	margin: 50px auto;
+	padding: 30px 24px;
+	max-width: 900px;
+	border-left: 12px dashed #ffb703;
+	border-radius: 30px 10px 30px 10px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* ---------- Heading Styles ---------- */
+.title {
+	font-size: 2.5rem;
+	font-weight: 800;
+	color: #023047;
+	text-align: center;
+	margin-bottom: 12px;
+}
+
+.slogan {
+	font-size: 1.25rem;
+	font-weight: bold;
+	color: #333;
+	text-align: left;
+	margin-bottom: 24px;
+}
+
+/* ---------- Intro Text ---------- */
+.intro {
+	font-size: 1rem;
+	margin-bottom: 16px;
+}
+
+/* ---------- Lead Image ---------- */
+.lead-image {
+	width: 300px;
+	max-width: 100%;
+	border-radius: 8px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	margin: 12px;
+	float: right;
+}
+
+@media (min-width: 900px) {
+	.lead-image.wowie {
+		width: 350px;
+		max-width: 40%;
+	}
+}
+
+@media (max-width: 640px) {
+	.lead-image {
+		float: none;
+		display: block;
+		margin: 12px auto;
+	}
+}
+
+/* ---------- CTA Buttons ---------- */
+.cta-group {
+	text-align: center;
+	margin-top: 32px;
+}
+
+.cta {
+	display: inline-block;
+	margin: 6px 12px;
+	padding: 12px 20px;
+	font-weight: 700;
+	text-decoration: none;
+	border-radius: 6px;
+	background: #00b4d8;
+	color: #fff;
+}
+
+.cta:hover {
+	background: #0077b6;
+}
+
+/* ---------- Showcase Cards ---------- */
+.showcase {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	margin-top: 40px;
+}
+
+.showcase-item {
+	background: #e3e7ec;
+	border-radius: 10px;
+	padding: 20px;
+	flex: 1 1 280px;
+	max-width: 320px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+.showcase-item img {
+	height: 250px;
+	width: auto;
+	object-fit: cover;
+	margin-bottom: 10px;
+	border-radius: 6px;
+}
+
+.showcase-item h3 {
+	margin-top: 0;
+	font-size: 1.25rem;
+}
+
+.showcase-item p {
+	margin-top: 12px;
+	font-size: 1rem;
+}
+
+/* ---------- Footer ---------- */
+footer {
+	background: #222;
+	color: #fff;
+	text-align: center;
+	padding: 15px 0;
+	margin-top: auto;
+}
+
+.legal {
+	font-size: 0.75rem;
+	opacity: 0.85;
+	margin-top: 4px;
+}
