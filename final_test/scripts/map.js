@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
 	const mapContainer = document.querySelector(".map-container");
 	const markers = document.querySelectorAll(".map-marker");
 
-	let currentZoom = 1.0;
-	let translateX = 0;
-	let translateY = 0;
+	let currentZoom = 2;
+	let translateX = 250;
+	let translateY = 150;
 	let isDragging = false;
 	let startX = 0;
 	let startY = 0;
