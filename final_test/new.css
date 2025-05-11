@@ -375,3 +375,198 @@ footer {
 		max-width: 100%;
 	}
 }
+
+/* David’s Gear: 2 columns × 4 rows */
+.gear-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-auto-rows: auto;
+	gap: 24px;
+	margin-top: 24px;
+}
+
+.gear-item {
+	background: #f8f9fa;
+	padding: 16px;
+	border-radius: 10px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+	text-align: center;
+}
+
+.gear-item img {
+	width: auto;           
+	height: 240px;           
+	max-width: 100%;         
+	object-fit: contain;      
+	object-position: center;
+	background: transparent;
+	display: block;          
+	margin: 0 auto 12px;    
+  }
+  
+  .gear-item img.horizontal-fit {
+	transform: rotate(90deg); 
+	transform-origin: center center;
+  }
+  
+.gear-item h3 {
+	margin: 8px 0;
+	font-size: 1.2rem;
+	color: #023047;
+}
+
+.gear-item p {
+	font-size: 0.95rem;
+	line-height: 1.4;
+}
+
+/* David In Action Story-Cards */
+.story-card {
+	position: relative;
+	overflow: auto;
+	margin-top: 24px;
+}
+
+.story-card h3 {
+	font-size: 1.75rem;
+	margin-bottom: 12px;
+}
+
+.story-card img {
+	float: right;
+	width: 180px;
+	height: auto;
+	object-fit: cover;
+	border-radius: 8px;
+	margin-left: 16px;
+	margin-bottom: 12px;
+}
+
+.story-card p {
+	font-size: 1rem;
+	line-height: 1.6;
+}
+
+hr.dashed {
+	border: none;
+	border-top: 3px dashed #ffb703;
+	margin: 32px 0;
+}
+
+.essay-image {
+	float: right;
+	width: 190px; 
+	height: auto;
+	object-fit: cover;
+	border-radius: 8px;
+	margin: 8px 0 4px 16px;
+  }
+  
+  .essay-image.trailgear-scale {
+	width: 300px;
+  }
+
+  .img-credit {
+	float: right;
+	clear: right;
+	font-size: 0.75rem;
+	color: #666;
+	margin: 0 16px 16px 16px;
+	font-style: italic;
+  }
+  
+/* Toggle button styling */
+.toggle-button {
+	display: inline-block;
+	background-color: #98e6aa;
+	color: black;
+	padding: 10px 14px;
+	font-size: 16px;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	margin-top: 10px;
+	display: block;
+	margin-left: auto;
+	transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+	background-color: #70a87d;
+	color: black;
+}
+
+.toggle-button.close {
+	display: block;
+	margin-left: auto;
+}
+
+.extra-content {
+	display: none;
+	margin-top: 15px;
+	border-top: 1px solid #ddd;
+	padding-top: 15px;
+}
+
+/* Floated content image (e.g., rocker graphic) */
+.wowie {
+	width: 40% !important;
+	max-width: 40% !important;
+	float: right !important;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+	object-fit: cover;
+}
+
+/* Highlight active navigation link */
+.global-nav .nav-links a.active,
+.global-nav .nav-links a[aria-current="page"] {
+	background: #00b4d8;
+	border-radius: 4px;
+}
+
+/* Reviews Section Enhancements */
+.review-image {
+	float: right;
+	max-width: 240px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.review-image img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	object-fit: cover;
+}
+
+.review-image .img-credit {
+	font-size: 0.75rem;
+	color: #666;
+	font-style: italic;
+	margin-top: 6px;
+}
+
+/* Styled blue title box */
+.content-box h1.title {
+	margin-top: 0;
+	font-weight: 800;
+	color: #023047;
+	padding: 8px 12px;
+	background: linear-gradient(to right, #00b4d8, #90e0ef);
+	display: inline-block;
+	border-radius: 10px;
+	box-shadow: 3px 3px 0 #0077b6;
+	transform: rotate(-1deg);
+}
+
+/* Ensure buttons align to right consistently */
+.toggle-button,
+.toggle-button.close {
+	display: block;
+	margin-left: auto;
+}

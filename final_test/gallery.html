@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Share Your Journey</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Gallery – Extreme Sport Travel</title>
+  <link rel="stylesheet" href="new.css"/>
 </head>
-<body>
+
+<body class="home-page">
   <div id="page-wrapper">
+
+    <!-- ───────── GLOBAL NAV ───────── -->
     <header>
       <nav class="global-nav">
         <a href="homepage.html">
-          <img src="images/logo.svg" alt="Extreme Sport Travel Logo" class="site-logo" />
+          <img src="images/logo.svg" alt="Extreme Sport Travel logo" class="site-logo"/>
         </a>
         <ul class="nav-links">
           <li><a href="homepage.html">Home</a></li>
-          <li><a href="builds.html">Builds</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="gear.html">Gear Info</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
           <li><a href="locations.html">Locations</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="reviews.html">Reviews</a></li>
@@ -25,61 +28,177 @@
       </nav>
     </header>
 
+    <nav class="inpage-nav">
+      <ul>
+        <li><a href="#gear">David’s Gear</a></li>
+        <li><a href="#action">David In Action</a></li>
+      </ul>
+    </nav>
+
     <main class="content-wrapper">
-      <section class="content-box">
-        <h1>Share Your Journey or Setup!</h1>
-        <p>
-          Welcome to the heart of our extreme sports community! This page is all about capturing the adventure, adrenaline, and artistry of movement. Whether you’re catching your first wave or summiting your first rock wall, these visuals tell the story of where we've been—and where we're going. 
-        </p>
-        <p>
-          We've curated two collections: one showing the raw gear and boards that define our sports, and another that captures the living moments—people mid-action, celebrating, failing, or flying. These images invite you to see, feel, and maybe someday contribute your own story.
-        </p>
+
+      <!-- David’s Gear -->
+      <section id="gear" class="anchor-target content-box">
+        <h2 class="title">David’s Gear</h2>
+        <p>My personal boards, skates, and gear—each played a key role in learning and adventure.</p>
+
+        <div class="gear-grid">
+          <div class="gear-item">
+            <img src="images/my_surfboard.jpg"  class="horizontal-fit" alt="My first surfboard"/>
+            <h3>My First Surfboard</h3>
+            <p>
+              My first surfboard purchased years ago now and was bought to last me as I grew up.
+			  Its a soft-top (foam) and around 8 feet tall, great beginner board for small waves.
+            </p>
+          </div>
+          <div class="gear-item">
+            <img src="images/my_snowboard.jpg"  class="horizontal-fit" alt="My first snowboard"/>
+            <h3>Beginners’ Snowboard</h3>
+            <p>
+              First full snowboard I ever purchased. Before I was renting as I grew up since the size of the board should be according to the height of the person.
+			  It was a great buy even with how expensive it was.
+            </p>
+          </div>
+          <div class="gear-item">
+            <img src="images/my_skateboard.jpg"  class="horizontal-fit" alt="My skateboard"/>
+            <h3>Driveway Skateboard</h3>
+            <p>
+              My older brother's first skateboard that I got as a hand-me-down. I never used it until way later in life.
+			  I'm glad I enjoy it now, but a part of me wishes I started with this guy way earlier.
+            </p>
+          </div>
+          <div class="gear-item">
+            <img src="images/roller-skates.jpg" alt="My inline skates"/>
+            <h3>Inline Skates</h3>
+            <p>
+              These are my second/third pair of Roller Blades (inline skates). The first pair started to break down so I threw it out.
+			  These skates are hockey skates that have different uses. The larger wheels one is faster while the smaller is more acrobatic.
+            </p>
+          </div>
+          <div class="gear-item tall">
+            <img src="images/red_ripstick.jpg"  class="horizontal-fit" alt="My red ripstick"/>
+            <h3>Indoor Ripstick</h3>
+            <p>
+              This ripstick is a small one, bought back in 2010s and was my first board while growing up.
+			  The wheels were too small to go over any thing bigger than a crack and was mostly used indoors.
+            </p>
+          </div>
+          <div class="gear-item tall">
+            <img src="images/gray_ripstick.jpg" alt="My gray ripstick"/>
+            <h3>Ourdoor Ripstick</h3>
+            <p>
+              My friends wanted to go ripsticking down a parking garage in my first couple years of college but mine was too small.
+			  I got this board so it can go over larger cracks and small holes down the garage, totally worth the second one.
+            </p>
+          </div>
+          <div class="gear-item">
+            <img src="images/first_snowboarg.jpg" alt="First snowboard ride"/>
+            <h3>First Snowbaord</h3>
+            <p>
+              The board I actually learned to snowboard in, even with how bad and old it was, I couldn't get rid of it.
+			  Nice thing to add to my collection.
+            </p>
+          </div>
+          <div class="gear-item">
+            <img src="images/first_sled.jpg" alt="My first sled"/>
+            <h3>First Sled</h3>
+            <p>
+              This sled held so many childhood memories as was the first thing to get me on the snow.
+			  I can never get rid of this one because it keeps bringing more and more memories as the years go on.
+            </p>
+          </div>
+        </div>
       </section>
 
-      <section class="content-box">
-        <h2>David's Gear</h2>
-        <p>This section shows the personal boards and skates used by David over the years.</p>
 
-        <div class="gallery-grid-3">
-          <img src="images/my_snowboard.jpg" alt="Snowboard">
-          <img src="images/my_surfboard.jpg" alt="Surfboard">
-          <img src="images/red_ripstick.jpg" alt="Red Ripstick" class="rotate2">
-          <img src="images/my_skateboard.jpg" alt="Skateboard" class="rotate">
+      <!-- David In Action -->
+      <section id="action" class="anchor-target content-box">
+        <h2 class="title">David In Action</h2>
+        <h3>Highlights of moments in motion. Raw, alive, real, and unposed.</h3>
 
-          <img src="images/roller-skates.jpg" alt="Roller Skates">
-          <img src="images/gray_ripstick.jpg" alt="Gray Ripstick">
-        </div>
+		<hr class="dashed"/>
 
-        <p><em>These items represent years of activity across multiple sports—each with wear, stories, and miles behind them.</em></p>
-        <ul>
-          <li>Sports: Skateboarding, Surfing, Roller Skating, Snowboarding</li>
-          <li>Characteristics: Personal gear, used terrain, design evolution</li>
-        </ul>
-      </section>
+        <article class="story-card">
+          <h3>Conquering the Alps</h3>
+          <img src="images/mountain.jpg" alt="Alpine snowfield"/>
+          <img src="images/me-chairlift.jpg" alt="Chairlift selfie"/>
+          <p>
+            I recently went on a snowboarding trip that was very much outside my usual area.
+			We went to Andorra in Europe, specifically the town called Pas de la Casa.
+			The whole exerience was compeltely eye opening, the whole country was basically mountains and places to ride.
+			Everyone spoke portuguese and very little spoke english, it made the whole trip almost an adventure.
+			It's basically a more budget-friendly Alps trip of the riding and the experience is one of a kind.
+          </p>
+        </article>
 
-      <section class="content-box">
-        <h2>David In Action</h2>
-        <p>
-          Here we highlight moments in motion—capturing terrain, skill, and spontaneity. These aren’t posed—they’re lived.
-        </p>
+        <hr class="dashed"/>
 
-        <div class="gallery-grid-3">
-          <img src="images/mountain.jpg" alt="Mountain View">
-          <img src="images/me-chairlift.jpg" alt="Chairlift Selfie">
-          <img src="images/me-horseback.jpg" alt="Horseback Riding">
-          <img src="images/dog-surfboard.jpg" alt="Dog on Surfboard">
-          <img src="images/racetrack.jpg" alt="Go Kart Racing">
-        </div>
+        <article class="story-card">
+          <h3>First Wave</h3>
+          <img src="images/first_surfing.png" alt="First surf ride"/>
+          <p>
+            I went to a surf school in the summer between 6th and 7th grade to learn how to surf.
+			The school went on for 5 days and I wanted more than anything to catch at least 1 good wave.
+			I fell over and over again for days until the 4th day where I finally caught one.
+			The wave doesn't look all that special now but it was huge to me in the moment.
+          </p>
+        </article>
 
-        <p><em>These snapshots document excitement, calm, risk, and joy—from mountaintops to motorsports.</em></p>
+        <hr class="dashed"/>
+
+        <article class="story-card">
+          <h3>White Mountains Gallop</h3>
+          <img src="images/me-horseback.jpg" alt="Horseback in forest"/>
+          <p>
+            My little brother wanted to ride a horse and for the first time, we all rode together.
+			This was about my 6th time riding one, but by now I at least know how to balance as he ran.
+			The amazing feeling of the power in the beast under me was something that you just can't describe.
+			I broke my arm later that day from something unrelated, but it was still a great day overall.
+          </p>
+        </article>
+
+        <hr class="dashed"/>
+
+        <article class="story-card">
+          <h3>Puppy on a Board</h3>
+          <img src="images/dog-surfboard.jpg" alt="Dog on surfboard"/>
+          <p>
+            When we first got our dog, I wanted to teach her so many tricks.
+			We started with sit, then stay and then taught her how to swim.
+			After that I went right to the board, teaching her the word "ride" to get on the nose.
+			We were going to ride together but my mom was so against her going into the ocean so it never ended up happening.
+          </p>
+        </article>
+
+        <hr class="dashed"/>
+
+        <article class="story-card">
+          <h3>Indoor Kart Rush</h3>
+          <img src="images/racetrack.jpg" alt="Indoor go-kart track"/>
+          <p>
+            This place is located in Route 1 in New Jersey. It's the world largest indoor go-kart track.
+			The carts go up to 50 miles an hour and you really can feel it.
+			The same way a car lower to the ground feels faster, it feels like you are almost running at 50 miles an hour.
+			Great time overall.
+          </p>
+        </article>
+
       </section>
     </main>
 
     <footer>
-      <p>&copy; 2025 by Extreme Sport Travel. All rights reserved.</p>
+      <p>&copy; 2025 Extreme Sport Travel. Some rights reserved.</p>
+      <p class="legal">
+        Content licensed under
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+           target="_blank" rel="noopener">
+          CC BY-NC-SA 4.0
+        </a>.
+      </p>
     </footer>
   </div>
 
   <script src="scripts/hidescroll.js"></script>
+  <script src="scripts/contenttoggle.js"></script>
 </body>
 </html>
