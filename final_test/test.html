@@ -1,169 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title>Locations</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Reviews</title>
     <link rel="stylesheet" href="new.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-	<div id="page-wrapper">
-		<header>
-			<nav class="global-nav">
-				<a href="homepage.html">
-					<img src="images/logo.svg" alt="Extreme Sport Travel Logo" class="site-logo" />
-				</a>
-				<ul class="nav-links">
-                    <li><a href="homepage.html">Home</a></li>
-                    <li><a href="gear.html">Gear Info</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="locations.html">Locations</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="reviews.html">Reviews</a></li>
-                    <li><a href="visual.html">Journey</a></li>
-				</ul>
-			</nav>
-		</header>
+  <div id="page-wrapper">
+    <header>
+      <nav class="global-nav">
+        <a href="homepage.html">
+          <img src="images/logo.svg" alt="Extreme Sport Travel Logo" class="site-logo" />
+        </a>
+        <ul class="nav-links">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="gear.html">Gear Info</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="reviews.html" class="active">Reviews</a></li>
+            <li><a href="visual.html">Journey</a></li>
+        </ul>
+      </nav>
+    </header>
 
-		<nav class="inpage-nav">
-			<ul>
-				<li><a href="#map">Map</a></li>
-			</ul>
-		</nav>
+        <nav class="inpage-nav">
+            <ul>
+                <li><a href="#review-gear">Snowboard Review</a></li>
+                <li><a href="#review-location">Harness Review</a></li>
+                <li><a href="#online-review">Web Review</a></li>
+            </ul>
+        </nav>
 
-		<main class="content-wrapper" id="map">
-            <div class="map-container">
-                <div class="map-zoom-wrapper" id="map-zoom-wrapper">
-                    <img src="images/worldmap.png" alt="World Map" class="map-image" />
-        
-                    <div class="map-marker snowboard-place alps" data-popup-id="popup-alps">
-                        <i class="fas fa-snowboarding fa-2x" style="color: teal;"></i>
-                        <div class="marker-popup" id="popup-alps">
-                            <h2>Snowboarding in the Alps</h2>
-                            <img src="images/alps.jpg" alt="Alps" class="popup-image">
-                            <p class="img-credit">Image credit: gettyimages.com</p>
-                            <p>The world's most famous mountain chain with powder runs and backcountry.</p>
-                            <p>One of the best in the World!</p>
-                        </div>
-                    </div>
-                    <div class="map-marker snowboard-place hunter" data-popup-id="popup-hunter">
-                        <i class="fas fa-snowboarding fa-2x" style="color: teal;"></i>
-                        <div class="marker-popup" id="popup-hunter">
-                            <h2>Hunter Mountain</h2>
-                            <img src="images/hunter.jpg" alt="Hunter Mountain" class="popup-image">
-                            <p class="img-credit">Image credit: wikipedia</p>
-                            <p>New York's famous snowboarding resort and a top beginner mountain in the New England area.</p>
-                            <p>6/10 conditions with 8/10 slopes, overall 7/10</p>
-                        </div>
-                    </div>
-                    <div class="map-marker snowboard-place camelback" data-popup-id="popup-camelback">
-                        <i class="fas fa-snowboarding fa-2x" style="color: teal;"></i>
-                        <div class="marker-popup" id="popup-camelback">
-                            <h2>Camelback Mountain</h2>
-                            <img src="images/camelback.jpg" alt="Camelback Mountain" class="popup-image">
-                            <p class="img-credit">Image credit: wikipedia</p>
-                            <p>East coast favorite in the Poconos with lots of beginner-to-intermediate friendly slopes.</p>
-                            <p>3/10 conditions with 7/10 slopes, overall 5/10</p>
-                        </div>
-                    </div>
-                    <div class="map-marker snowboard-place andorra" data-popup-id="popup-andorra">
-                        <i class="fas fa-snowboarding fa-2x" style="color: teal;"></i>
-                        <div class="marker-popup" id="popup-andorra">
-                            <h2>Grandvalira, Andorra</h2>
-                            <img src="images/andorra.jpg" alt="Andorra Mountain" class="popup-image">
-                            <p class="img-credit">Image credit: Reddit</p>
-                            <p>The largest ski area in the Pyrenees, known for scenic rides and high-quality snowboarding terrain at a fair price.</p>
-                            <p>10/10 conditions with 10/10 slopes</p>
-                        </div>
-                    </div>
-                    <div class="map-marker snowboard-place breck" data-popup-id="popup-breck">
-                        <i class="fas fa-snowboarding fa-2x" style="color: teal;"></i>
-                        <div class="marker-popup" id="popup-breck">
-                            <h2>Breckenridge, CO</h2>
-                            <img src="images/breckenridge.jpg" alt="Breckenridge CO" class="popup-image">
-                            <p class="img-credit">Image credit: breckenridge.com</p>
-                            <p>World-renowned resort in the Rockies with the best powder in the U.S. of A.</p>
-                            <p>10/10 conditions with 9/10 slopes, overall 10/10</p>
-                        </div>
-                    </div>
-                    <div class="map-marker snowboard-place granite" data-popup-id="popup-granite">
-                        <i class="fas fa-snowboarding fa-2x" style="color: teal;"></i>
-                        <div class="marker-popup" id="popup-granite">
-                            <h2>Granite Peak, WI</h2>
-                            <img src="images/granite.jpg" alt="Granite Peak WI" class="popup-image">
-                            <p class="img-credit">Image credit: wikipedia</p>
-                            <p>Wisconsin’s most famous snowboard destination.</p>
-                            <p>8/10 conditions with 9/10 slopes, overall 8/10</p>
-                        </div>
-                    </div>
+        <main class="content-wrapper">
+            <section>
 
-                    <div class="map-marker rock-place gardenstate" data-popup-id="popup-gardenstate">
-                        <i class="fas fa-mountain fa-2x" style="color: gray;"></i>
-                        <div class="marker-popup" id="popup-gardenstate">
-                            <h2>Garden State Rock, NJ</h2>
-                            <img src="images/garden.jpg" alt="Garden State Rock" class="popup-image">
-                            <p class="img-credit">Image credit: bestofnj.com</p>
-                            <p>Premier indoor climbing gym in NJ with bouldering, top-rope, and lead routes for all levels.</p>
-                            <p>9/10 community with 8/10 climbs, overall 8/10</p>
-                        </div>
-                    </div>
-                    <div class="map-marker rock-place rutgerswall" data-popup-id="popup-rutgerswall">
-                        <i class="fas fa-mountain fa-2x" style="color: gray;"></i>
-                        <div class="marker-popup" id="popup-rutgerswall">
-                            <h2>Rutgers Rock Wall – College Ave</h2>
-                            <img src="images/rockwall.jpg" alt="Rutgers Rock Wall" class="popup-image">
-                            <p class="img-credit">Image credit: Rutgers</p>
-                            <p>Campus wall for Rutgers NB students, great for beginners and casual climbing sessions.</p>
-                            <p>10/10 community with 7/10 climbs, overall 8/10</p>
-                        </div>
-                    </div>
+            </section>
 
-                    <div class="map-marker surf-place asbury" data-popup-id="popup-asbury">
-                        <img src="images/surfboard-drawing.svg" class="surfboard-icon" alt="Surfboard Marker">
-                        <div class="marker-popup" id="popup-asbury">
-                            <h2>Asbury Park, NJ</h2>
-                            <img src="images/asbury.jpg" alt="Asbury Park" class="popup-image">
-                            <p class="img-credit">Image credit: Asbury Park Press</p>
-                            <p>Classic Jersey Shore surf town with a lively beach break and summer scene.</p>
-                            <p>10/10 beach but 5/10 waves, overall 7/10</p>
-                        </div>
-                    </div>
-                    <div class="map-marker surf-place huntington" data-popup-id="popup-huntington">
-                        <img src="images/surfboard-drawing.svg" class="surfboard-icon" alt="Surfboard Marker">
-                        <div class="marker-popup" id="popup-huntington">
-                            <h2>Huntington Beach, CA</h2>
-                            <img src="images/huntington.jpg" alt="Huntington Beach CA" class="popup-image">
-                            <p class="img-credit">Image credit: Youtube - Brad Jacobson</p>
-                            <p>Known as “Surf City USA,” a world class surfing destination with year round swells.</p>
-                            <p>10/10 beach with 10/10 waves</p>
-                        </div>
-                    </div>
+            <section id="review-snowboard" class="anchor-target content-box">
+                <h1 class="title">System MTN Snowboard</h1>
+                <div class="review-image">
+					<a href="https://shorturl.at/SgMEY" target="_blank">
+						<img src="images/systemmountainsnowboard.jpg" alt="System MTN Snowboard" />
+					</a>
+					<p class="img-credit">Image via Amazon • Click to view</p>
+				</div>				  
+                <p><strong>Cost:</strong> $300</p>
+                <p><strong>Rating:</strong> ★★★★☆</p>
+                <p><strong>Looks:</strong> Clean, minimalist graphic - really sharp design.</p>
+                <p><strong>Ride Feel:</strong> Light and floaty with good grip. Smooth in powder.</p>
+                <p><strong>Tech:</strong> CRCX camber for fewer edge catches, 3D poplar core adds spring.</p>
+                <p><strong>Best For:</strong> New and intermediate riders who want to progress.</p>
+                <p><strong>Includes:</strong> Summit bindings - comfy, padded, easy to adjust.</p>
+                <p><strong>Downsides:</strong> Not ideal for big park jumps. Scratches easily.</p>
+
+                <button class="toggle-button">Click to See More</button>
+
+                <div class="extra-content">
+                    <p><strong>David Approved</strong></p>
+                    <p>The System MTN Snowboard offers a great entry point into snowboarding, especially for riders looking for versatility on the mountain. 
+						With a sleek and sick graphic that appeals to minimalist style, this snowboard doesn’t just ride well, it looks the part, too. 
+						Read for some serious grinding!
+					</p><br>
+						<img src = "images/snowboard-rocker.jpg" alt="rocker" class="wowie">
+					<p>At 300 bucks, it comes in well below the cost of many high-end boards, but don’t let the price fool you. 
+						The MTN features a CRCX camber profile that combines cambered contact points with a <strong>rocker</strong> dominant shape. 
+						In simple terms, this helps reduce edge catches and enhances float in powder. 
+						For beginners, this means fewer faceplants and more time upright. 
+						For intermediate riders, it means you can press and carve confidently.
+					</p><br>
+					<p>The board is made from poplar wood and features a 3D core construction, which adds spring and responsiveness. 
+						I noticed right away how light it looks without sacrificing strength. 
+						Poplar’s known for its lively ride, and when paired with high-density stringers, it really shines when you want to pop off side hits or flow through trees. 
+						The Summit bindings were a pleasant surprise as well being lightweight, easy to adjust, and the EVA padding adds noticeable comfort during long runs.
+					</p><br>
+					<p>That said, this setup isn’t ideal for serious park rats or pro-level carvers. 
+						The flex is medium soft, which limits stability at high speeds. 
+						Advanced riders who enjoy aggressive downhill bombing might feel underwhelmed. 
+						Additionally, the graphic, while clean and stylish, isn’t super scratch-resistant. 
+						After a few sessions, minor dings and scuffs will become visible.
+					</p><br>
+					<p>Still, for riders looking to hit groomers, dip into powder, or cruise the resort, this board hits a sweet spot. 
+						It blends approachability with just enough performance edge to grow with your skills. 
+						Whether you're shredding fresh snow or just learning to link turns, the System MTN is a solid companion.
+					</p><br>
+
+                    <button class="toggle-button close">Revert</button>
                 </div>
-                <div class="map-controls">
-                    <button id="zoom-in">+</button>
-                    <button id="zoom-out">−</button>
-                </div>
-                <div class="map-legend" style="position:absolute; bottom:20px; left:20px; background:rgba(255,255,255,0.8); padding:8px 12px; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
-                    <div class="map-legend-item" style="display:flex; align-items:center; margin-bottom:4px;">
-                      <i class="fas fa-snowboarding" style="color:teal; margin-right:6px;"></i> Snowboarding
-                    </div>
-                    <div class="map-legend-item" style="display:flex; align-items:center; margin-bottom:4px;">
-                      <i class="fas fa-mountain" style="color:gray; margin-right:6px;"></i> Climbing
-                    </div>
-                    <div class="map-legend-item" style="display:flex; align-items:center;">
-                      <img src="images/surfboard-drawing.svg" class="surfboard-icon" alt="Surfing" style="width:1.2em; margin-right:6px;" /> Surfing
-                    </div>
-                </div>
-            </div>
-        </main>              
+            </section>
 
-		<footer>
-			<p>&copy; 2025 by Extreme Sport Travel. All rights reserved.</p>
-		</footer>
-	</div>
+            <section id="review-climbing" class="anchor-target content-box">
+                <h1 class="title">Momentum Harness Kit</h1>
+				<div class="review-image">
+					<a href="https://shorturl.at/SgMEY" target="_blank">
+						<img src="images/blackdiamondclimbinggear.jpg" alt="Black Diamond Harness Kit" />
+					</a>
+					<p class="img-credit">Image via Amazon • Click to view</p>
+				</div>	
+                <p><strong>Cost:</strong> ~$90</p>
+                <p><strong>Rating:</strong> ★★★★★</p>
+                <p><strong>Includes:</strong> Harness, chalk bag & ball, ATC device, locking carabiner.</p>
+                <p><strong>Comfort:</strong> Dual Core padding feels great for long sessions.</p>
+                <p><strong>Ease of Use:</strong> trakFIT legs are fast to tighten. Everything is beginner-ready.</p>
+                <p><strong>Trust Factor:</strong> Black Diamond quality - works for gym or outdoor climbing.</p>
+                <p><strong>Limitations:</strong> Not for expert multi-pitch. ATC is basic, chalk bag is decent.</p>
 
-	<script src="scripts/hidescroll.js"></script>
-	<script src="scripts/map.js"></script>
+                <button class="toggle-button">Click to See More</button>
+
+                <div class="extra-content">
+                    <p><strong>Rocky Approved</strong></p>
+                    <p>Climbers know that gear isn’t just about performance. 
+						It’s entirely about safety, comfort, and ease of use. 
+						The Black Diamond Momentum Climbing Harness Package delivers impressively on all three, making it a no brainer for beginners and recreational climbers alike.
+					</p><br>
+					<p>For about 90 bucks (often cheap from sales), this package comes fully loaded: 
+						the Momentum harness, a chalk bag, chalk ball, a locking carabiner, and the ATC belay device. 
+						You’re essentially ready to walk into your local gym or crag and get climbing. 
+						The harness itself is where this bundle really shines. 
+						With Dual Core Construction, it disperses pressure evenly around your waist, and the adjustable leg loops (trakFIT system) make finding a snug fit painless. 
+						Whether you’re climbing indoors or at the crag, the harness stays comfortable, even during long belays or just hanging while being taken down.
+					</p><br>
+					<p>The ATC belay device and carabiner are simple, but that’s part of their charm. 
+						They’re reliable, easy to use, and perfect for learning the ropes, whether you’re top roping or just starting to lead. 
+						The chalk bag and chalk ball? 
+						They’re fine for now, though you might want to upgrade to better brands like magdust (I’m a big Magnus fan) later if you start climbing more seriously.
+					</p><br>
+					<p>One of the biggest strengths of this package is its convenience. 
+						It removes the guesswork from assembling your first climbing kit. 
+						Everything fits together well, and Black Diamond’s reputation for safety and reliability means you’re not cutting corners with lower-tier gear.
+					</p><br>
+					<p>Of course, experienced climbers might find the ATC device limiting compared to more advanced assisted braking devices like the Petzl GriGri. 
+						Also, the Momentum harness lacks extra gear loops or ice clipper slots, so it's not ideal for multi-pitch trad or alpine climbing.
+					</p><br>
+					<p>But for 90% of recreational climbers, especially beginners, this kit checks all the boxes. 
+						It’s comfortable, intuitive, safe, and affordable. 
+						And that peace of mind is invaluable when you’re trusting a few straps and carabiners with your life on the wall.
+					</p><br>
+                    <button class="toggle-button close">Revert</button>
+                </div>
+            </section>
+
+            <section id="online-review" class="content-box micro-reviews">
+                <h1 class="title">
+                <i class="fas fa-map-signs"></i>
+                    Ride Ready Web Tools
+                </h1>
+            
+                <h3>
+                    <i class="fas fa-cloud"></i>
+                    <a href="https://www.surfline.com/" target="_blank" rel="noopener">
+                        Surfline – Forecast, Live Cams & More
+                    </a>
+                </h3>
+                <p>
+                    Plug in any spot and view HD surf cams alongside real time swell, wind, and tide charts. 
+                    Set up custom “Swell Alerts” via email or push to never miss glassy dawn sessions.
+                </p><br>
+                <p>
+                    The whole website is super informational, easy to understand, and has almost all the information you need.<br>
+                    One of the go to websites if you want to get ready for a surfing trip.
+                </p><br>
+
+                <h3>
+                    <i class="fas fa-cloud"></i>
+                    <a href="https://www.weather.gov/marine/" target="_blank" rel="noopener">
+                        NOAA Marine Forecast – Official Coastal Briefings
+                    </a>
+                </h3>
+                <p>
+                    Get NOAA’s zone specific marine text forecasts and graphical charts (wind, waves, tides). 
+                    Trusted by mariners, it’s the go to for safety planning on any shoreline or bay.
+                </p><br>
+                <p>
+                    The website is for any and all forecasts and warning for the entire US coast/bay-line.<br>
+                    No matter where you are in the U.S. of A., this website will be useful.
+                </p><br>
+            
+                <h3>
+                    <i class="fas fa-cloud"></i>
+                    <a href="https://www.windy.com/" target="_blank" rel="noopener">
+                        Windy.com – Interactive Weather Map
+                    </a>
+                </h3>
+                <p>
+                    Spin a 3D globe, layer ECMWF/ICON weather models, and animate wind arrows and wave heights—ideal for spotting offshore storms days in advance.
+                </p><br>
+                <p>
+                    This interactive map has all the weather patterns you could possible be looking for to know what to expect.<br>
+                    If you only wanted to check one place to know the weather for any trip, this would be the place.
+                </p><br>
+            
+                <h3>
+                    <i class="fas fa-dumbbell"></i>
+                    <a href="https://www.trainingbeta.com/" target="_blank" rel="noopener">
+                        TrainingBeta – Rock Climbing Trainer
+                    </a>
+                </h3>
+                <p>
+                    Downloadable PDF protocols and a free benchmarking app that logs crimp strength over time.
+                    Ideal for turning gym sessions at your local climbing gym into measurable progress.
+                </p><br>
+                <p>
+                    The site is super easy to use, has any and all information to get into rock climbing and comes with a 7 day free trial.<br>
+                    The main issue with the site is that a lot of it does require to pay, but once you have your plan, you can just track it yourself from there.
+                </p><br>
+            
+                <h3>
+                    <i class="fas fa-tags"></i>
+                    <a href="https://slickdeals.net/deals/sports/" target="_blank" rel="noopener">
+                        SlickDeals » Sports & Outdoors Feed
+                    </a>
+                </h3>
+                <p>
+                    Filter community voted bargains by keyword (“wetsuit,” “helmet,” “bindings”) and subscribe to alerts. 
+                    Never miss 30%+ markdowns on gear you actually need.
+                </p><br>
+                <p>
+                    The site does look like a pre-Amazon online shop with almost barebone information and no preview images and is still running more than 20 years later. <br>
+                    It is trusted and very functional + it has some of the best deals you can find anywhere except the Black Market.
+                </p><br>
+
+                <h3><i class="fas fa-shield-alt"></i>
+                    <a href="https://worldnomads.com/" target="_blank" rel="noopener">World Nomads Adventure Insurance</a>
+                </h3>
+                <p>
+                    Medical &amp; equipment cover designed for “dangerous” hobbies (yes, they actually list snowboarding and surfing). 
+                    Peace of mind if your next wipe out happens abroad.
+                </p><br>
+                <p>
+                    This site is probably the most useful on this list. Safety is always the first priority with anything extreme. <br>
+                    It has great quotes and is very trusted across the internet. Plus it's super user friendly and has a safe feeling to it.
+                </p><br>
+            </section>
+            
+        </main>
+
+        <footer>
+            <p>&copy; 2025 by Extreme Sport Travel. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="scripts/hidescroll.js"></script>
+    <script src="scripts/contenttoggle.js"></script>
 </body>
 </html>

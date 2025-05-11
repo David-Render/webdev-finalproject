@@ -361,7 +361,6 @@ footer {
 	color: #333;
 }
 
-/* Responsive fallback */
 @media (max-width: 1000px) {
 	.showcase-gear .showcase-item {
 		flex: 1 1 calc(50% - 20px);
@@ -719,15 +718,14 @@ hr.dashed {
   .map-marker.rutgerswall{ top: 43.5%;left:32.8%; }
   .map-marker.asbury   { top: 44.2%; left: 34.3%; }
   .map-marker.huntington{ top: 49%;  left: 24.6%; }
-  
-/* enlarge & restack marker popups */
+
 .marker-popup {
 	background: #ffffff;
-	width: 480px;               /* double from 240px */
+	width: 480px;             
 	display: none;
-	flex-direction: column;     /* stack children vertically */
+	flex-direction: column;    
 	align-items: center;
-	text-align: left;           /* left-align text */
+	text-align: left;      
 	padding: 16px;
   }
   
@@ -735,7 +733,6 @@ hr.dashed {
 	display: flex;
   }
   
-  /* enforce child order and sizing */
   .marker-popup h2 {
 	order: 0;
 	margin-bottom: 8px;
@@ -815,3 +812,10 @@ hr.dashed {
 	display: inline-block;
   }
   
+  .content-box {
+	transition: transform 0.2s ease-in-out;
+}
+
+.content-box:hover {
+	transform: scale(1.10);
+}
